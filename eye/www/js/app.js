@@ -19,6 +19,7 @@ ons.ready(function () {
 document.addEventListener("backbutton", onBackKeyDown, false);
 function onBackKeyDown(e) {
   e.preventDefault();
+  document.querySelector('#myNavigator').popPage()
 }
 
 document.addEventListener("deviceready", function () {
