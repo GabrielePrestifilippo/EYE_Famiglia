@@ -1,0 +1,15 @@
+#pending-list {
+    background-color: white !important;
+}
+
+#product {
+    display: flex;
+}
+
+#blouse {
+    flex: 150px;
+}
+
+#description {
+    margin-left: 15px;
+}

@@ -1,0 +1,48 @@
+#wrapper {
+    background-color: #ececee;
+    width: auto;
+    height: 100%;
+}
+
+.foodItem {
+    background-color: white;
+    margin: auto;
+    border-bottom: 1px solid #d0d0d0;
+    position: relative;
+    height: 50px;
+    padding:10px;
+}
+
+
+.foodName {
+    color: #448AFF;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.foodText {height: 70px;}
+
+.bottomFood {
+    border-top: 1px solid #efefef;
+    height: 100%;
+    position: relative;
+}
+
+.topFood {
+    z-index: 99;
+    height: 150px;
+    background-size: cover;
+    background-position-y: 50%;
+}
+.n1 {
+    color: #313131;
+    font-family: Roboto;
+    text-align: center;
+}
+.progress.p1 {
+    background-color: #cecece;
+}
+.determinate.d1 {
+    background-color: #448AFF;
+}

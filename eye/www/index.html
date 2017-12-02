@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+    <title></title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/mfb.min.js"></script>
+
+    <link rel="stylesheet" href="./css/animate.min.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="leaflet.css">
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/mfb.min.css" />
+
+    <style>
+
+    </style>
+    <style>
+        html * {
+            font-family: "RobotoCondensed-Regular", sans-serif !important;
+            -webkit-backface-visibility: hidden !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- First navigation component: Navigator. This will remain always on top of the app. -->
+<ons-navigator id="myNavigator" var="app.navi" page="splitter.html">
+
+</ons-navigator>
+
+
+<!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
+<ons-template id="splitter.html">
+    <ons-splitter id="mySplitter">
+        <ons-splitter-content page="tabbar.html">
+        </ons-splitter-content>
+    </ons-splitter>
+</ons-template>
+
+
+<ons-modal id="recording" style="pointer-events:none">
+    <div id="recordingInside">
+        <ons-icon size=" 28px" style="padding-top:10px;" icon="ion-android-microphone"></ons-icon>
+        <div id="dots">Listening</div>
+    </div>
+</ons-modal>
+
+
+<ons-modal id="loginPage">
+    <div id="tabSelectName">
+        <div class="leftName33">Operatore</div>
+        <div class="leftName33">Cooperativa</div>
+        <div class="leftName33">Famiglia</div>
+    </div>
+    <div id="loginScreen">
+        <div id="spaceLogo"></div>
+        <div id="logoName"><br><br><br></div>
+        <div id="logo">
+        </div>
+        <div id="loginData">
+            Benvenuto
+            <input class="inputForm spec" type="text"
+                   placeholder="Username" />
+            <input class="inputForm spec" type="text"
+                   placeholder="Password" />
+            <div id="loginButton">Login</div>
+        </div>
+    </div>
+</ons-modal>
+
+
+<ons-template id="tabbar.html">
+    <ons-page id="tabbarPage">
+        <ons-toolbar>
+            <div id="searchBar">
+                <ons-search-input placeholder="Ricerca.."></ons-search-input>
+            </div>
+            <div class="left">
+                <img class="leftIconBar logoTop" src="images/logo.png">
+            </div>
+            <div class="center">EYE</div>
+            <div onclick="goToPage('html/search.html')" class="right">
+                <img class="rightIconBar" src="images/search.png">
+            </div>
+        </ons-toolbar>
+
+        <ons-tabbar id="myTabbar">
+
+            <ons-tab page="html/list.html" active="true">
+                <ons-icon size=" 20px" icon="ion-person"></ons-icon>
+            </ons-tab>
+
+            <ons-tab id="rewardPage" page="html/list.html">
+                <ons-icon size=" 20px" icon="ion-fork"></ons-icon>
+            </ons-tab>
+
+            <ons-tab page="html/deals.html">
+                <ons-icon size=" 20px" icon="ion-map"></ons-icon>
+            </ons-tab>
+
+
+        </ons-tabbar>
+
+
+    </ons-page>
+
+</ons-template>
+
+
+</body>
+
+</html>

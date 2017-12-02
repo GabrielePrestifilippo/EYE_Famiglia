@@ -1,0 +1,147 @@
+
+#loginPage {
+    display: block;
+}
+
+#loginScreen {
+    height: 100vh;
+    background-color: #448AFF;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+#logo {
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 5%;
+    box-shadow: 0px 0 18px 5px rgba(0, 0, 0, 0.31);
+    max-height: 30%;
+    border-radius: 50%;
+    background-image: url('../images/logo.png');
+    background-color: #f3f3f3;
+    background-position: center;
+    background-size: contain;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inputForm {
+    display: block;
+    width: 81%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#spaceLogo {
+    height: 5%;
+}
+
+#loginButton {
+    background-color: white;
+    color: #448AFF;
+    font-size: 16px;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    border-radius: 30px;
+}
+
+#loginButton:active {
+    background-color: #e3e3e3;
+    color: #448AFF;
+}
+
+input[type="text"] {
+    border: none;
+    line-height: 50px;
+    height: 40px;
+}
+
+div#loginData {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    font-size: 22px;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+.spec {
+    background-color: #448AFF;
+    border-bottom: 1px solid #d3e1d9 !important;
+    color: white !important;
+}
+
+.leftIconBar {
+    width: 45px;
+    padding: 5px;
+}
+
+.rightIconBar {
+    width: 23px;
+    top: 50%;
+    padding: 10px;
+    position: relative;
+    transform: translateY(-50%);
+    right: 5px;
+}
+.openIcon img {
+    max-height: 30px;
+}
+
+.openIcon {
+    height: 50px;
+    position: relative;
+    width: 50px;
+    float: right;
+    opacity: 0.8;
+}
+.foodItem.alwaysTop {
+    top: 0px;
+    height: 50px;
+    z-index: 9999;
+    border-bottom: 1px solid gray;
+}
+
+#listActivity{
+
+}
+
+.logoTop {
+    max-height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    left: 10px;
+}
+
+.when {
+    font-size: 12px;
+    float: right;
+    color: #448aff;
+}
+
+.searchBar{
+    display:none;
+    position:absolute;
+}

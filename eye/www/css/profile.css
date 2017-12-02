@@ -1,0 +1,225 @@
+
+.spider {
+    margin-left: 5%;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(45, 204, 112);
+    height: 40%;
+    background-image: url("../images/bgfood.jpg");
+}
+
+.smallDivider {
+    height: 1px;
+    width: 80%;
+    background-color: #e2e2e2;
+    position: fixed;
+    margin-left: 10%;
+}
+
+div#nutrients {
+    background-color: #448AFF;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -5px 20px 3px rgba(0, 0, 0, 0.22);
+}
+
+div#nutrients {
+}
+
+div#circle {
+    text-align: center;
+    padding-top: 20px;
+    z-index: 999;
+}
+
+div#healthIndex {
+    top: -90px;
+    font-size: 15px;
+    position: relative;
+    color: white;
+}
+
+div#percentageHealth {
+    font-size: 20px;
+}
+
+.indicator {
+    width: 20%;
+    position: relative;
+    float: left;
+    height: auto;
+    /* padding-left: 20px; */
+}
+
+.notiText {
+    color: #448AFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#wrapNotif {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px;
+    height: 20%;
+}
+
+div#yesAnswer {
+    width: 40%;
+    border-radius: 4px;
+    color: #ffffff;
+    /* border: 1px solid #ececec; */
+    padding: 5px;
+    float: left;
+    margin-top: 10%;
+    line-height: 30px;
+    height: 30px;
+    left: 5px;
+    position: relative;
+    font-weight: bold;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.74);
+    background-color: #448AFF;
+}
+
+div#noAnswer {
+    width: 40%;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 5px;
+    float: right;
+    height: 30px;
+    margin-top: 10%;
+    line-height: 30px;
+    position: relative;
+    right: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.74);
+    background-color: #af0f0f;
+}
+
+#noAnswer:active{
+    background-color: #740c0c;
+}
+#yesAnswer:active{
+    background-color: #207839;
+}
+.indicator img {
+    border-radius: 50%;
+    height: auto;
+    width: 65%;
+    padding: 5px;
+}
+
+.brand {
+    text-align: left;
+    font-size: 16px;
+    color: #448AFF;
+    float: left;
+    width: 60%;
+    font-weight: bold;
+    line-height: 30px;
+    position: relative;
+}
+
+.brandItem {
+    font-weight: bold;
+    width: 100%;
+    background-color: white;
+    height: 65px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+p {
+    opacity: 0;
+    position: relative;
+    float: right;
+    left: -58px;
+    /* width: 50px; */
+    line-height: normal;
+    top: -60px;
+    padding: 2px 10px;
+    height: 20px;
+    border-radius: 3px;
+    background: #9E9E9E;
+    box-shadow: 1px 2px 10px #555;
+}
+
+.floatLeft {
+    float: left;
+    padding-left: 50px;
+}
+
+.floatRight {
+    float: right;
+    padding-right: 50px;
+}
+
+div#container {
+    height: auto;
+}
+
+.progress {
+    position: relative;
+    height: 5px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    background-color: #186f3d;
+    border-radius: 2px;
+    background-clip: padding-box;
+    margin: 0.1rem 0 0.3rem 0;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-top: -2%;
+    margin-bottom: -2%;
+}
+
+.progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    background-color: #ffffff;
+    transition: width .3s linear;
+}
+
+.nutrient {
+    width: 33%;
+    /* padding-top: 20px; */
+    line-height: 30px;
+    float: left;
+    /* line-height:40px; */
+    height: 100%;
+}
+
+.cir {
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+* {
+    outline: none;
+}
+#logoName img {
+    max-width: 60%;
+    margin-bottom: 10px;
+}
+.center img {
+    max-height: 55px;
+}
